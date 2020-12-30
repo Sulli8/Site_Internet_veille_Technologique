@@ -1,0 +1,20 @@
+body{
+  background-image: url(image/Fond_ecran_portfolio.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  background-color: #34495e;
+  border-radius: 50px;
+  height:100px;
+  width:200px;
+}
+.gif{
+  background-image: url("https://i.gifer.com/Nglf.gif");
+}
