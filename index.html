@@ -6,30 +6,39 @@
 <title>Portfolio| SEXTIUS Sullivan </title>
 <link href="css/style.css" rel="stylesheet"></link>
 </head>
+<style media="screen">
+#a-propos {
+    padding-bottom: 8vh;
+}
+#photo_rounded_top {
+    display: block;
+    float: right;
+}
+</style>
 <body style="background-image: url(image/Fond_ecran_portfolio.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;">
-  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/8a3192b16c.js" crossorigin="anonymous"></script>
-  <div style="background:rgba(0,0,0,0.5);border-radius:40px;height:90px;"class="mt-3 mb-3 border border-white w-25   d-block mx-auto text-center text-white">
-    <h4 class="mt-4">Sullivan SEXTIUS</h4>
+  <div style="background:rgba(0,0,0,0.8);border-radius:40px;height:90px;"class="mt-3 mb-3 d-flex justify-content-center aligns-items-center border border-white w-25 d-block mx-auto text-center text-white">
+    <h4 class="titre mt-4"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt=""> Sullivan SEXTIUS</h4>
   </div></s>
-<nav style="background:rgba(0,0,0,0.8);border-radius:35px;" class="d-block mx-auto w-50 navbar navbar-expand-md navbar-dark text-center">
+<nav style="background:rgba(0,0,0,0.8);border-radius:35px;" class="border border-white d-block mx-auto w-50 navbar navbar-expand-md navbar-dark text-center">
 
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -46,53 +55,82 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">BTS S.I.O</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">PPE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Commpétence</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Veille</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Stage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<h2 class="text-center text-white "id="autotext">Bonjour !</h2>
-<div class="text-white d-flex justify-content-center aligns-items-center min-100-vh">&copy; Portfolio.com | Site résalisé par SEXTIUS Sullivan</div>
-<script>
-var nbOptions = 8;
 
-var angleStart = -360;
+<h1 style="margin-top:100px;"class="text-center ml3 text-white">Bienvenue Sur Mon Portofolio</h1>
+<h6 class="mt-4 text-white d-flex justify-content-center aligns-items-center">VOUS Y RETROUVEREZ L'ENSEMBLE DE MES RÉALISATIONS QUE J'AI PU EFFECTUER</h6>
+<h6 class="text-white d-flex justify-content-center aligns-items-center">DURANT MON</h6>
+<h6 style="margin-bottom:300px;"class="text-primary text-center">BTS SIO OPTION SLAM</h6>
+<section class="bg bg-light">
 
-// jquery rotate animation
-function rotate(li,d) {
-$({d:angleStart}).animate({d:d}, {
-step: function(now) {
-$(li)
-.css({ transform: 'rotate('+now+'deg)' })
-.find('label')
-.css({ transform: 'rotate('+(-now)+'deg)' });
-}, duration: 0
-});
-}
+<div class="d-flex justify-content-center aligns-items-center container">
 
-// show / hide the options
-function toggleOptions(s) {
-$(s).toggleClass('open');
-var li = $(s).find('li');
-var deg = $(s).hasClass('half') ? 180/(li.length-1) : 360/li.length;
-for(var i=0; i<li.length; i++) {
-var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
-$(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
-}
-}
 
-$('.selector button').click(function(e) {
-toggleOptions($(this).parent());
-});
+    <div id="a-propos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="display-4 titre_section">Qui Suis-Je ?</h2>
+                    </div>
 
-setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
+                    <div class="col-12">
+                        <div class="card card_quisuisje">
+                            <div class="card-body">
 
-</script>
-<script type="text/javascript" src="effet.js">
-</script>
+                                <div class="float-right" style="border:6px solid #fff;box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.8);"id="photo_rounded_top" >
+                                    <img width="200" class="rounded" height="200 "src="image/photo.png" alt="Photo Ronde">
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 texte_presentation">
+                                    <p class="card-text">Je m'apelle Sullivan, j'ai 20 ans et je suis actuellement en
+                                        2ème année de BTS SIO (Services Informatiques aux Organisations)
+                                        option SLAM (Solutions Logicielles et Applications Métiers) à l'U.F.A Robert Schuman
+                                    </p>
+                                    <p class="card-text">Cette option est plus communément connue sous le terme
+                                        "développement d'applications".
+                                      </p><p id="bt_cv"><a href="Developpeur_logiciel.pdf" class="lien_cv" target="_blank"><button class="btn btn-primary"><i class="far fa-eye" aria-hidden="true"></i> Voir Mon
+                                                    CV</button></a></p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 </div>
+
+
+</section>
+<div class="text-white d-flex justify-content-center aligns-items-center min-100-vh">&copy; Portfolio.com | Site résalisé par SEXTIUS Sullivan</div>
+
+<script type="text/javascript" src="effet.js">
+
+</script>
+
 
 </body>
 </html>
