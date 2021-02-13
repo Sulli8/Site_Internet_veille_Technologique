@@ -6,35 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style media="screen">
-    .cv{
+  <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
 
-      height:300px;
-      color:#000000;
-      border-radius: 2px;
-      background-color: #fff;
-      padding:10px 10px 10px 10px;
-
-
-    }
-    .cv:hover{
-
-        transition: 0.5s;
-      	background-color: rgba(0,0,0,0.5);
-        color:#fff;
-      }
-  </style>
 </head>
 <body>
+  <div class="cursor"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <div id="navbar">
   <a class="display-4 titre" href="javascript:void(0)"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
 </div>
   <section class="began">
+    <!-- particles.js container --> <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <div class="visit">
-      <h1 style="margin-bottom:50px;" href="" class="display-4 typewrite" data-period="1000" data-type='[ "Bienvenue sur le Portfolio.","De SEXTIUS Sullivan ", "Cliquez sur le bouton pour commencer." ]'></h1>
-      <a class="btn-visit mt-3 display-4" href="#home"><i class="fas fa-binoculars"></i> Visiter mon Portfolio</a>
+      <h1 style="margin-bottom:50px;" href="" class="display-4 typewrite" data-period="1000" data-type='[ "Je suis","SEXTIUS Sullivan ", "Bienvenue sur mon Portfolio." ]'></h1>
+      <img id="projet_img" style="transform:rotate(5deg);visibility: hidden;width:500px;height: 300px;z-index:7;position:absolute;top:80px;left:700px;"src="https://media.giphy.com/media/qwFVqd5Wpz2LAIDCkP/giphy.gif" alt=""/>
+      <h4>Vous pouvez découvrir <a id="lien_projet">mes supers projets </a>et en <a id="lien_home" href="#home">apprendre un peu plus sur moi</a></h4>
+      <script type="text/javascript">
+      let projets = document.getElementById("lien_projet");
+      let learn = document.getElementById("lien_home");
+projets.addEventListener("mouseenter", function( event ) {
+  document.getElementById('projet_img').style.visibility = "visible";
+  //document.getElementById('projet_img').setAttribute("src", );
+  event.target.style.color = "purple";
 
+}, false);
+// Ce gestionnaire sera exécuté à chaque fois que le curseur
+// se déplacera sur un autre élément de la liste
+projets.addEventListener("mouseout", function( event ) {
+  // on met l'accent sur la cible de mouseover
+  event.target.style.color = "black";
+    document.getElementById('projet_img').style.visibility = "hidden";
+}, false);
+
+learn.addEventListener("mouseenter", function( event ) {
+  //document.getElementById('projet_img').setAttribute("src", );
+  event.target.style.color = "purple";
+}, false);
+learn.addEventListener("mouseout", function( event ) {
+  //document.getElementById('projet_img').setAttribute("src", );
+  event.target.style.color = "#000";
+}, false);
+      </script>
+      <div style="margin-top:40px;"class="mouse_scroll">
+    		<div class="mouse">
+    			<div class="wheel"></div>
+    		</div>
+    		<div>
+    			<span class="m_scroll_arrows unu"></span>
+    			<span class="m_scroll_arrows doi"></span>
+    			<span class="m_scroll_arrows trei"></span>
+    		</div>
+    </div>
     </div>
 
   </section>
@@ -43,28 +67,58 @@
   <div class="carousel-controls">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"><a>Présentation</a></li>
-      <li data-target="#carousel" data-slide-to="1" ><a>PPE</a></li>
+      <li id="projets" data-target="#carousel" data-slide-to="1" ><a>PPE</a></li>
       <li data-target="#carousel" data-slide-to="2"><a>Compétence</a></li>
       <li data-target="#carousel" data-slide-to="3"><a>Veille</a></li>
       <li data-target="#carousel" data-slide-to="4"><a>Stage</a></li>
     </ol>
 
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image:url('img/began.jpeg')">
+  <div class="text-dark carousel-inner">
+    <div class="carousel-item active" >
       <div class="container">
-         <h2>À propos de moi</h2>
-         <p>Bonjour, je m’appelle Sullivan SEXTIUS, j’ai 20 ans. Diplômé du Baccalauréat technologique STI2D en 2018. Actuellement développeur Web en Alternance, je poursuis mon projet socio-professionnel afin d'obtenir un Master en Développement Logiciel pour devenir Chef de projet.</p>
-         <p style="margin-top: 20px;color:#000000;"><a href="Pdf/Developpeur_logiciel.pdf" class="cv">Voir le C.V</a></p>
+         <h2 class=""style="color:#000;">À propos de moi</h2>
+         <p style="margin-top: 100px;text-align:justify;color:#000;" class="presentation">Salut! Je m’appelle <b>Sullivan SEXTIUS</b>, je suis un développeur web et logiciel passionné qui s'intéresse de près à la conception de logiciel. Ma spécialité est de construire des solutions applicatives de A à Z, en commençant par la définition du produit pour répondre au mieux aux besoins, en passant par la conception de l'outil, l'intégration des pages et le développement des différentes fonctionnalités. Je peux donc vous accompagner sur toutes les étapes de votre projet digital. Voici mes domaines de compétences...</p>
+         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#000;" class="developpement_web">
+           <b>Développement web</b>
+C’est l’étape de construction du site ou de l’application web avant la mise en ligne du site. J’ai toutes les compétences nécessaires pour m’occuper de l’intégration des templates et des fonctionnalités techniques d’un projet web.
+         </p>
+         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#000;" class="text-dark developpement_logiciel">
+           <b>Développement Logiciel</b>
+           Le développement de logiciel consiste à étudier, concevoir, construire, transformer, mettre au point, maintenir et améliorer des logiciels.
+           C'est un domaine très complexe qui requiert des connaissances mathématiques et logiques.
+         </p>
+         <a href='Pdf/Developpeur_logiciel.pdf' class="cv">Voir le C.V</a>
       </div>
     </div>
-    <div class="carousel-item" style="background-image:url('img/coding.png')">
+    <div class="carousel-item" style="">
       <div class="container">
          <h2>Nombre de projet effectués : 8 </h2>
-         <p>En effet durant mon cursus professionnelle et étudiant j'ai pu traviller sur de nombreux projets.</p>
+         <p style="color:#000;">En effet durant mon cursus professionnelle et étudiant j'ai pu traviller sur de nombreux projets, voici les différents projets sur lequels j'ai pu travailler...</p>
+         <div class="PPE">
+         <div class="projet">
+           <img src="img/Site_restauration.png"alt="">
+           <p style="	color:#000;">Site de restauration en PHP</p>
+           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
+         </div>
+         <div class="projet">
+           <img src="img/HSP_SiteWeb.png"alt="">
+           <p style="	color:#000;">Site prestation médical en PHP</p>
+           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
+         </div>
+
+         <div class="projet">
+           <img src="img/CinemaSiteWeb.png"alt="">
+           <p style="	color:#000;">Site de Streaming en PHP</p>
+           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
+         </div>
+
+         </div>
+       </div>
+
       </div>
     </div>
-    <div class="carousel-item" style="background-image:url('img/slide-3.jpg')">
+    <div class="carousel-item" style="z-index:-1;background-image:url('img/slide-3.jpg')">
       <div class="container">
          <h2>I'm Ruby</h2>
          <p>Web 3</p>
@@ -87,6 +141,12 @@
   </div>
 </div>
  </section>
+ <footer>
+  <button onclick="location.href='https://github.com/'"><i class="fab fa-github"> </i></button>
+   <button onclick="location.href='https://www.linkedin.com/in/sullivan-sextius-8394ba163/'"><i class="fab fa-linkedin"></i></button>
+   <button onclick="location.href='https://www.instagram.com/site_web_sullivan/'"><i class="fab fa-instagram-square"></i></button>
+    <p>2020 - SEXTIUS Sullivan - Développeur Logiciel et développeur web<p>
+ </footer>
 <script src="https://kit.fontawesome.com/8a3192b16c.js" crossorigin="anonymous"></script>
  <script type="text/javascript" src="effet.js"></script>
  <script>
@@ -102,6 +162,19 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
+})
+
+document.addEventListener('click', ()=>{
+    cursor.classList.add('expand');
+
+    setTimeout(()=>{
+        cursor.classList.remove("expand");
+    }, 500);
+})
 </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
