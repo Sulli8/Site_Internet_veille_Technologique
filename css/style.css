@@ -36,7 +36,11 @@ body{
 	font-size:20px;
 	margin-left: 50px;
 }
+.propos_de_moi{
+	margin-bottom:200px;
+}
 .main{
+	text-align: center;
 	margin-top: 40px;
 }
 .competence_langage p{
@@ -64,7 +68,7 @@ progress[value]::-webkit-progress-value {
 	   -webkit-linear-gradient(top,
 	                           rgba(255, 255, 255, .25),
 	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #09c, #f44);
+	   -webkit-linear-gradient(left, #fff, #000);
 
     border-radius: 20px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -91,12 +95,15 @@ progress{
 	border:2px solid #fff;
 	color:#fff;
 	padding: 20px 20px 20px 20px;
+	margin-left: 30px;
+	margin-top: 30px;
 }
 .projet img {
 	width:200px;
 	height:90px;
 
 }
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -129,27 +136,32 @@ progress{
 	margin-top: 8px;
 }
 .En_savoir_plus:hover{
-	transition: 0.4s;
-	color:#fff;
-	border-color:2px solid #fff;
-	background-color: #000;
+	transition: 0.5s;
+	background-color: #fff;
+	color:#0f0f0f;
 }
 .presentation{
 	margin-top:30px;
 	margin-bottom: 40px;
 	text-align: center;
 	color:#fff;
+	text-align:justify;
+	color:#fff;
 
 }
 .container p{
 	margin-top:20px;
 }
+
 .developpement_web,.developpement_logiciel{
 	margin-top:30px;
 	display: block;
 	margin: auto;
 	color:#fff;
 	width:600px;
+	margin-left:5px;
+	margin-top: 40px;
+	text-align:justify;
 }
 
 footer button{
@@ -290,28 +302,7 @@ a{
 	height:300px;
 	text-align: center;
 }
-.home .carousel-item{
-	min-height: 100vh;
-	background-position: center;
-	background-size: cover;
-	z-index: 1;
-}
-.home .carousel-item:before{
-	content: '';
-	position: absolute;
-	left:0;
-	top:0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
-.home .carousel-item .container{
-	position: absolute;
-	left: 50%;
-	top:50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
-}
+
 a{
 	text-decoration: none;
 
@@ -329,79 +320,6 @@ a{
 	color: #eeeeee;
 	opacity:0;
 }
-.home .carousel-item.active h2{
-	animation: fadeInLeft 0.5s ease forwards;
-}
-.home .carousel-item.active p{
-	animation: fadeInRight 0.5s ease forwards;
-}
-
-@keyframes fadeInLeft{
-	0%{
-		opacity: 0;
-		transform: translateX(-30px);
-	}
-	100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-@keyframes fadeInRight{
-	0%{
-		opacity: 0;
-		transform: translateX(30px);
-	}
-	100%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.home .carousel-controls{
-	position: absolute;
-	left: 50%;
-	top: -80px;
-	z-index: 2;
-	transform: translateX(-50%);
-}
-
-.home .carousel-indicators{
-	position: relative;
-	margin:0;
-}
-
-.home .carousel-indicators li{
-	height: 30px;
-	width: 100px;
-	margin:0 5px;
-	color:#fff;
-	margin-top:200px;
-	text-align: center;
-	transition: all 0.3s ease;
-}
-.home .carousel-indicators li.active{
-	border-bottom:2px solid #fff;
-	transform: scale(1.2);
-}
-
-
-
-
-/*responsive*/
-@media(max-width: 767px){
-
-  .home .carousel-indicators li{
-  	height: 60px;
-  	width: 60px;
-  }
-  .home .carousel-item h2{
-  	font-size: 45px;
-  }
-  .home .carousel-item p{
-  	font-size: 22px;
-  }
-}
-
 
 
 .mouse_scroll {
