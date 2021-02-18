@@ -9,12 +9,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
 
 </head>
-<body>
-  <div class="cursor"></div>
 
+<body>
+  <div class="cursor" id="cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <div id="navbar">
-  <a class="display-4 titre" href="javascript:void(0)"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
+  <a class="display-4 titre" href="../index.html"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
 </div>
   <section class="began">
     <!-- particles.js container --> <div id="particles-js"></div>
@@ -30,13 +30,12 @@ projets.addEventListener("mouseenter", function( event ) {
   document.getElementById('projet_img').style.visibility = "visible";
   //document.getElementById('projet_img').setAttribute("src", );
   event.target.style.color = "purple";
-
 }, false);
 // Ce gestionnaire sera exécuté à chaque fois que le curseur
 // se déplacera sur un autre élément de la liste
 projets.addEventListener("mouseout", function( event ) {
   // on met l'accent sur la cible de mouseover
-  event.target.style.color = "black";
+  event.target.style.color = "#fff";
     document.getElementById('projet_img').style.visibility = "hidden";
 }, false);
 
@@ -46,7 +45,7 @@ learn.addEventListener("mouseenter", function( event ) {
 }, false);
 learn.addEventListener("mouseout", function( event ) {
   //document.getElementById('projet_img').setAttribute("src", );
-  event.target.style.color = "#000";
+  event.target.style.color = "#fff";
 }, false);
       </script>
       <div style="margin-top:40px;"class="mouse_scroll">
@@ -62,28 +61,28 @@ learn.addEventListener("mouseout", function( event ) {
     </div>
 
   </section>
-  <section id="home"class="home">
+
+
+ <section class="home">
   <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-controls">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"><a>Présentation</a></li>
       <li id="projets" data-target="#carousel" data-slide-to="1" ><a>PPE</a></li>
-      <li data-target="#carousel" data-slide-to="2"><a>Compétence</a></li>
-      <li data-target="#carousel" data-slide-to="3"><a>Veille</a></li>
-      <li data-target="#carousel" data-slide-to="4"><a>Stage</a></li>
-    </ol>
+      <li id="competence" data-target="#carousel" data-slide-to="2"><a>Compétence</a></li>
 
+    </ol>
   </div>
-  <div class="text-dark carousel-inner">
+  <div class="carousel-inner">
     <div class="carousel-item active" >
       <div class="container">
-         <h2 class=""style="color:#000;">À propos de moi</h2>
-         <p style="margin-top: 100px;text-align:justify;color:#000;" class="presentation">Salut! Je m’appelle <b>Sullivan SEXTIUS</b>, je suis un développeur web et logiciel passionné qui s'intéresse de près à la conception de logiciel. Ma spécialité est de construire des solutions applicatives de A à Z, en commençant par la définition du produit pour répondre au mieux aux besoins, en passant par la conception de l'outil, l'intégration des pages et le développement des différentes fonctionnalités. Je peux donc vous accompagner sur toutes les étapes de votre projet digital. Voici mes domaines de compétences...</p>
-         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#000;" class="developpement_web">
+         <h2 class=""style="color:#fff;">À propos de moi</h2>
+         <p style="margin-top: 100px;text-align:justify;color:#fff;" class="presentation">Salut! Je m’appelle <b>Sullivan SEXTIUS</b>, je suis un développeur web et logiciel passionné qui s'intéresse de près à la conception de logiciel. Ma spécialité est de construire des solutions applicatives de A à Z, en commençant par la définition du produit pour répondre au mieux aux besoins, en passant par la conception de l'outil, l'intégration des pages et le développement des différentes fonctionnalités. Je peux donc vous accompagner sur toutes les étapes de votre projet digital. Voici mes domaines de compétences...</p>
+         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#fff;" class="developpement_web">
            <b>Développement web</b>
 C’est l’étape de construction du site ou de l’application web avant la mise en ligne du site. J’ai toutes les compétences nécessaires pour m’occuper de l’intégration des templates et des fonctionnalités techniques d’un projet web.
          </p>
-         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#000;" class="text-dark developpement_logiciel">
+         <p style="margin-left:5px;margin-top: 40px;text-align:justify;color:#fff;" class="developpement_logiciel">
            <b>Développement Logiciel</b>
            Le développement de logiciel consiste à étudier, concevoir, construire, transformer, mettre au point, maintenir et améliorer des logiciels.
            C'est un domaine très complexe qui requiert des connaissances mathématiques et logiques.
@@ -91,51 +90,131 @@ C’est l’étape de construction du site ou de l’application web avant la mi
          <a href='Pdf/Developpeur_logiciel.pdf' class="cv">Voir le C.V</a>
       </div>
     </div>
-    <div class="carousel-item" style="">
+    <div class="carousel-item">
       <div class="container">
-         <h2>Nombre de projet effectués : 8 </h2>
-         <p style="color:#000;">En effet durant mon cursus professionnelle et étudiant j'ai pu traviller sur de nombreux projets, voici les différents projets sur lequels j'ai pu travailler...</p>
-         <div class="PPE">
-         <div class="projet">
-           <img src="img/Site_restauration.png"alt="">
-           <p style="	color:#000;">Site de restauration en PHP</p>
-           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
-         </div>
-         <div class="projet">
-           <img src="img/HSP_SiteWeb.png"alt="">
-           <p style="	color:#000;">Site prestation médical en PHP</p>
-           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
-         </div>
+               <h2 style="margin-top:10px;">Nombre de projet effectués : <span id="cpt_projet"></span> </h2>
+               <script type="text/javascript">;
+           var cpt = 0
+           var time = 1000
+          var cpt_dynamique  = setInterval(function(){   cpt++
+              document.getElementById("cpt_projet").innerHTML = cpt;
+              console.log(cpt);
+              if(cpt == 8 ){
+                clearInterval(cpt_dynamique);
+                document.getElementById("cpt_projet").style.color = "purple";
+              }
+            },time);
+           </script>
+           <p style="margin-top:120px;color:#fff;">En effet durant mon cursus professionnelle et étudiant j'ai pu travailler sur de nombreux projets, voici les différents projets sur lesquels j'ai pu travailler...</p>
+           <div class="PPE">
+           <div class="projet">
+             <img src="img/Site_restauration.png"alt="">
+             <p style="	color:#fff;">Site de restauration en <b>PHP</b></p>
+             <a id="En_savoir_plus" class="En_savoir_plus" href="page/SiteRestauration.html">En savoir plus +</a>
+           </div>
+           <div class="projet">
+             <img src="img/HSP_SiteWeb.png"alt="">
+             <p style="	color:#fff;">Site prestation médical en <b>PHP</b></p>
+             <a id="En_savoir_plus" class="En_savoir_plus" href="page/HSP_Site_Web.html">En savoir plus +</a>
+           </div>
 
-         <div class="projet">
-           <img src="img/CinemaSiteWeb.png"alt="">
-           <p style="	color:#000;">Site de Streaming en PHP</p>
-           <a id="En_savoir_plus" class="En_savoir_plus" href="#">En savoir plus +</a>
-         </div>
+          <div class="projet">
+            <img src="img/CinemaSiteWeb.png"alt="">
+            <p style="	color:#fff;">Site de Streaming en <b>PHP</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/Site_Cinema.html">En savoir plus +</a>
+          </div>
 
+          <div class="projet">
+            <img src="img/Application_Hsp_java.png"alt="">
+            <p style="	color:#fff;">Application Snack <b>PHP,JQuery</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_HSP.html">En savoir plus +</a>
+          </div>
+          </div>
+          <div class="PPE">
+          <div class="projet">
+            <img src="img/ApplicationSnack.png"alt="">
+            <p style="	color:#fff;">Application Médecial <b>Java</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/ApplicationSnack.html">En savoir plus +</a>
+          </div>
+          <div class="projet">
+            <img src="img/XML_sepa.jpeg"alt="">
+            <p style="	color:#fff;">Rédaction d'un fichier <b>XML</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/Redaction_XMl.html">En savoir plus +</a>
+          </div>
+
+          <div class="projet">
+            <img src="image/applicationSuivi1.png"alt="">
+            <p style="	color:#fff;">Application de Suivi Client <b>PHP</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_suivi_client.html">En savoir plus +</a>
+          </div>
+
+          <div class="projet">
+            <img src="img/XML_sepa.jpeg"alt="">
+            <p style="	color:#fff;">Application Morpion <b>Jquery</b></p>
+            <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_Morpion.html">En savoir plus +</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+         <h2 style="margin-top:-200px;">Compétences </h2>
+         <div class="main">
+           <p style="color:#fff;margin-top:100px;">Durant mon stage,mon alternance et mes deux ans de BTS S.I.O SLAM,j'ai également pu acquérir de nombreuses compétences...</p>
+         <div class="competence_langage">
+         <div class="langage_info">
+            <div  style="	color:#fff;margin-top:30px;"class="java"><i class="fab fa-java"></i> Java : Langage Logiciel</div>
+           <progress id="avancement1" value="69" max="100"></progress>
+           <span id="pourcentage1"></span>
          </div>
+         <div class="langage_info">
+           <div style="	color:#fff;margin-top:30px;"><i class="fab fa-python"></i> Python: Langage Logiciel</div>
+          <progress id="avancement2" value="80" max="100"></progress>
+          <span id="pourcentage2"></span>
+           </div>
+         <div class="langage_info">
+            <div  style="	color:#fff;margin-top:30px;"class="php"><i class="fab fa-php"></i> PHP : Langage Web</div>
+           <progress id="avancement3" value="85" max="100"></progress>
+           <span id="pourcentage3"></span>
+         </div>
+         <div class="langage_info">
+           <div  style="	color:#fff;margin-top:30px;"class="html"><i class="fab fa-html5"></i> HTML : Langage Web</div>
+          <progress id="avancement4" value="85" max="100"></progress>
+          <span id="pourcentage4"></span>
+           </div>
+
+         <div class="competence_langage">
+         <div class="langage_info">
+            <div  style="	color:#fff;margin-top:0px;"class="css"><i class="fab fa-css3"></i> CSS : Langage Web Design</div>
+           <progress id="avancement5" value="80" max="100"></progress>
+           <span id="pourcentage5"></span>
+         </div>
+         <div class="langage_info">
+           <div style="	color:#fff;margin-top:20px;" class="javascript"><i class="fab fa-js-square"></i> Javascript : Langage Web Dynamique</div>
+          <progress id="avancement6" value="65" max="100"></progress>
+          <span id="pourcentage6"></span>
+           </div>
+
+         <div class="langage_info">
+            <div  style="	color:#fff;margin-top:20px;"class="sql"><i class="fas fa-database"></i> SQL : Langage Base de donnée </div>
+           <progress id="avancement7" value="75" max="100"></progress>
+           <span id="pourcentage7"></span>
+         </div>
+         <div class="langage_info">
+           <div style="	color:#fff;" class="jquery">  <img height="25" width="25" src="https://img.icons8.com/ios-filled/150/ffffff/jquery.png"/>Jquery : Langage Web venant du Javascript</div>
+          <progress style="margin-top:15px;"id="avancement8" value="55" max="100"></progress>
+          <span id="pourcentage8"></span>
+           </div>
+         </div>
+         <script type="text/javascript">
+         var avancement = ["avancement1","avancement2","avancement3","avancement4","avancement5","avancement6","avancement7","avancement8"];
+         var pourcentage = ["pourcentage1","pourcentage2","pourcentage3","pourcentage4","pourcentage5","pourcentage6","pourcentage7","pourcentage8"];
+         for (var i = 0; i < avancement.length; i++) {
+            document.getElementById(pourcentage[i]).innerHTML = document.getElementById(avancement[i]).value+"%";
+         }
+         </script>
        </div>
 
-      </div>
-    </div>
-    <div class="carousel-item" style="z-index:-1;background-image:url('img/slide-3.jpg')">
-      <div class="container">
-         <h2>I'm Ruby</h2>
-         <p>Web 3</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" style="background-image:url('img/slide-3.jpg')">
-      <div class="container">
-         <h2>I'm Ruby</h2>
-         <p>Web 4</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" style="background-image:url('img/slide-3.jpg')">
-      <div class="container">
-         <h2>I'm Ruby</h2>
-         <p>Web 5</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,177 @@
+html{
+	transition: 0.8s;
+  scroll-behavior: smooth;
+}
+body{
+	cursor: none;
+	background-color: #0f0f0f;
+	border-right:100px solid #0f0f0f;
+	border-left:100px solid #0f0f0f;
+}
+.competence,.image_projet{
+  display: inline-block;
+  margin: auto;
+}
+.competence{
+  padding: 10px 10px 10px 10px;
+  float:right;
+}
+.image_projet{
+  float:left;
+}
+.text--big{
+  font-size: 1.18rem;
+  line-height: 2rem;
+  color:#fff;
+}
+.like_projet{
+  color:#fff;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #000000;
+  padding:20px 20px 20px 20px;
+  text-align: center;
+  font-size: 20px;
+  border:2px solid #fff;
+
+}
+.like_projet i{
+    transform:translateY(-60%);
+}
+.like_projet:hover{
+  transition: 0.5s;
+  background-color: #fff;
+  border:2px solid #000;
+  color:#000;
+}
+
+.block_projet{
+  margin-top: 100px;
+}
+.image_projet{
+  margin:0;
+  overflow-y: auto;
+  height:600px;
+
+}
+.image_projet img{
+  display: block;
+  margin: auto;
+
+}
+.competence{
+  width:50%;;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 86.1%;
+}
+
+.sticky + .content {
+  padding-top: 200px;
+}
+
+.cursor {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+		pointer-events: none;
+}
+h1{
+  color:#fff;
+}
+li{
+  color:#fff;
+}
+#navbar {
+  overflow: hidden;
+	z-index: 6;
+  background-color: #0f0f0f;
+}
+.far{
+  margin-left: -10px;
+  transform: translateY(-60%);
+}
+.titre{
+	border-bottom: 4px solid #fff;
+	width:100%;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-left: 3px;
+}
+footer button{
+	background: none;
+	border: none;
+}
+footer i{
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	font-size: 50px;
+	padding: 40px;
+	margin-top: 30px;
+}
+footer{
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	width:1000px;
+	border-top:1px solid #fff;
+	color:#fff;
+}
+footer p{
+	text-align:center;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+.expand {
+    animation: Anim2 .5s;
+    background: #fff;
+    border: 1px solid crimson;
+}
+@keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+}
+
+@keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+}

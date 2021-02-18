@@ -51,7 +51,7 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
     particlesJS("particles-js", {
@@ -64,13 +64,13 @@ var TxtType = function(el, toRotate, period) {
       }
     },
     "color": {
-      "value": ["#000","#000","#000","#000","#000"]
+      "value": ["#fff","#fff","#fff","#fff","#fff"]
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000"
+        "color": "#fff"
       }
     },
     "opacity": {
@@ -96,7 +96,7 @@ var TxtType = function(el, toRotate, period) {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#000",
+      "color": "#fff",
       "opacity": 0.4,
       "width": 1
     },
