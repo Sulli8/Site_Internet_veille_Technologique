@@ -11,10 +11,13 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img width="200" height="200" src="https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif" alt="">
+  </div>
   <div class="cursor" id="cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <div id="navbar">
-  <a class="display-4 titre" href="../index.html"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
+  <a class="display-4 titre" href="index.html"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
 </div>
   <section class="began">
     <!-- particles.js container --> <div id="particles-js"></div>
@@ -245,6 +248,11 @@ document.addEventListener('click', ()=>{
         cursor.classList.remove("expand");
     }, 500);
 })
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+$(".loader").slideToggle("1000"); })
 </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
