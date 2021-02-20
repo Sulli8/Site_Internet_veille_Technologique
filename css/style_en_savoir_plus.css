@@ -175,3 +175,102 @@ footer p{
         opacity:0;
     }
 }
+
+
+
+
+
+
+html{
+	transition: 0.8s;
+  scroll-behavior: smooth;
+}
+body{
+	cursor: none;
+	background-color: #0f0f0f;
+	border-right:100px solid #0f0f0f;
+	border-left:100px solid #0f0f0f;
+}
+
+.projet_informations{
+	text-align: center;
+}
+footer button{
+	background: none;
+	border: none;
+}
+footer i{
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	font-size: 50px;
+	padding: 40px;
+	margin-top: 30px;
+}
+
+footer{
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	width:1000px;
+	border-top:1px solid #fff;
+	color:#fff;
+}
+footer p{
+	text-align:center;
+}
+.icon {
+	color:#fff;
+	font-size: 70px;
+	margin-left: 100px;
+	margin-top:100px;
+}
+.para{
+	color:#fff;
+	font-size: 30px;
+}
+.text--big{
+  font-size: 1.18rem;
+  line-height: 2rem;
+  color:#fff;
+}
+.image_cv{
+		margin-top:120px;
+}
+
+
+.link{
+	border-bottom:1px solid #fff;
+	text-decoration: none;
+	color: #fff;
+}
+.formation{
+	color:white;
+	display:block;
+	margin: auto;
+}
+img,h2,h1,.presentation{
+	margin-top: 20px;
+}
+.presentation{
+	color:#fff;
+	width:600px;
+	text-align: justify;
+}
+
+h2{
+	margin-top:30px;
+	color:#fff;
+}
+
+
+
+h1{
+  color:#fff;
+}
+
+.far{
+  margin-left: -10px;
+  transform: translateY(-60%);
+}
