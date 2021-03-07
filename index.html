@@ -16,15 +16,15 @@
   </div>
   <div class="cursor" id="cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <div id="navbar">
-  <a class="display-4 titre" href="index.html"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
+   <div id="navbar">
+  <a class="display-4 " href="index.html"><img class="mr-2 mb-2"width="40" height="40" src="image/logo.png" alt="">SEXTIUS Sullivan</a>
 </div>
   <section class="began">
     <!-- particles.js container --> <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <div class="visit">
       <h1 style="margin-bottom:50px;" href="" class="display-4 typewrite" data-period="1000" data-type='[ "Je suis","SEXTIUS Sullivan ", "Bienvenue sur mon Portfolio." ]'></h1>
-      <img id="projet_img" style="transform:rotate(5deg);visibility: hidden;width:500px;height: 300px;z-index:7;position:absolute;top:80px;left:700px;"src="https://media.giphy.com/media/qwFVqd5Wpz2LAIDCkP/giphy.gif" alt=""/>
+      <img id="projet_img" style="transform:rotate(5deg);visibility: hidden;width:40%;height: 70%;z-index:7;position:absolute;top:80px;"src="https://media.giphy.com/media/qwFVqd5Wpz2LAIDCkP/giphy.gif" alt=""/>
       <h4>Vous pouvez découvrir <a id="lien_projet">mes supers projets </a>et en <a id="lien_home" href="#home">apprendre un peu plus sur moi</a></h4>
       <script type="text/javascript">
       let projets = document.getElementById("lien_projet");
@@ -69,8 +69,10 @@ learn.addEventListener("mouseout", function( event ) {
  <section class="home">
 <section data-aos="fade-left"class="propos_de_moi">
   <h2 class=""style="color:#fff;">À propos de moi</h2>
-  <p  class="presentation">Salut! Je m’appelle <b>Sullivan SEXTIUS</b>, je suis un développeur web et logiciel passionné qui s'intéresse de près à la conception de logiciel. Ma spécialité est de construire des solutions applicatives de A à Z, en commençant par la définition du produit pour répondre au mieux aux besoins, en passant par la conception de l'outil, l'intégration des pages et le développement des différentes fonctionnalités. Je peux donc vous accompagner sur toutes les étapes de votre projet digital. Voici mes domaines de compétences...</p>
+  <p  class="presentation">Salut! Je m’appelle <b>Sullivan SEXTIUS</b>, je suis un développeur web et logiciel passionné qui s'intéresse de près à la conception de logiciel.<span class="saut_ligne"> Ma spécialité est de construire des solutions applicatives de A à Z, en commençant par la définition du produit pour répondre au mieux aux besoins, en passant par la conception de l'outil, l'intégration des pages et le développement des différentes fonctionnalités.</span> <span class="saut_ligne">Je peux donc vous accompagner sur toutes les étapes de votre projet digital. Voici mes domaines de compétences...</span></p>
+    <h2 class=""style="color:#fff;">Mes spécialités dans le développement</h2>
   <p class="developpement_web">
+
     <b>Développement web</b>
 C’est l’étape de construction du site ou de l’application web avant la mise en ligne du site. J’ai toutes les compétences nécessaires pour m’occuper de l’intégration des templates et des fonctionnalités techniques d’un projet web.
   </p>
@@ -79,7 +81,7 @@ C’est l’étape de construction du site ou de l’application web avant la mi
     Le développement de logiciel consiste à étudier, concevoir, construire, transformer, mettre au point, maintenir et améliorer des logiciels.
     C'est un domaine très complexe qui requiert des connaissances mathématiques et logiques.
   </p>
-  <a href='Page/En_savoir_plus.html' class="cv">En savoir plus +</a>
+  <a href='page/en_savoir_plus.html' class="cv">En savoir plus +</a>
 
 </section>
 
@@ -97,115 +99,111 @@ var cpt_dynamique  = setInterval(function(){   cpt++
    }
  },time);
 </script>
-  <section class="nombre_projet">
+<section >
 <h2 style="color:#fff;">Nombre de projet effectués : <span id="cpt_projet"></span> </h2>
 <p style="color:#fff;">En effet durant mon cursus professionnelle et étudiant j'ai pu travailler sur de nombreux projets, voici les différents projets sur lesquels j'ai pu travailler...</p>
 <div class="PPE">
-<div data-aos="fade-right" class="projet">
-  <img src="img/Site_restauration_2.png"alt="">
-  <p style="	color:#fff;">Site de restauration en <b>PHP</b></p>
-  <a id="En_savoir_plus" class="En_savoir_plus" href="page/SiteRestauration.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+  <h3 style="	color:#fff;"> Site de restauration en <b>PHP</b><a id="En_savoir_plus" class="En_savoir_plus" href="page/siterestauration.html"> <i class="fas fa-cog"></i></a></h3>
+
+<img src="img/Site_restauration_2.png"alt="">
+
+
 </div>
-<div data-aos="fade-right" class="projet">
-  <img src="img/HSP_SiteWeb.png"alt="">
-  <p style="	color:#fff;">Site prestation médical en <b>PHP</b></p>
-  <a id="En_savoir_plus" class="En_savoir_plus" href="page/HSP_Site_Web.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+  <h3 style="	color:#fff;">  Site prestation médical en <b>PHP</b><a id="En_savoir_plus" class="En_savoir_plus" href="page/hsp_site_web.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/HSP_SiteWeb.png"alt="">
 </div>
 
-<div data-aos="fade-right" class="projet">
- <img src="img/cinama_diapo.png"alt="">
- <p style="	color:#fff;">Site de Streaming en <b>PHP</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/Site_Cinema.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+    <h3 style="	color:#fff;">  Site de Streaming en en <b>PHP</b><a id="En_savoir_plus" class="En_savoir_plus" href="page/site_cinema.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/cinama_diapo.png"alt="">
 </div>
 
-<div data-aos="fade-right" class="projet">
- <img src="img/Snack_1.png"alt="">
- <p style="	color:#fff;">Application Snack <b>PHP,JQuery</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/ApplicationSnack.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+  <h3 style="	color:#fff;">  Application Snack <b>PHP</b><a id="En_savoir_plus" class="En_savoir_plus" href="page/applicationsnack.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/Snack_1.png"alt="" height="">
 </div>
 </div>
 <div class="PPE">
-<div data-aos="fade-right" class="projet">
- <img src="img/HSP_java_1.png"alt="">
- <p style="	color:#fff;">Application Médical <b>Java</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_HSP.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+    <h3 style="	color:#fff;"> Application Médical <b>Java</b><a id="En_savoir_plus" class="En_savoir_plus"  href="page/application_hsp.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/HSP_java_1.png"alt="">
 </div>
-<div data-aos="fade-right" class="projet">
- <img src="img/XML_sepa.jpeg"alt="">
- <p style="	color:#fff;">Rédaction d'un fichier <b>XML</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/Redaction_XMl.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+  <h3 style="	color:#fff;"> Rédaction d'un fichier <b>XML</b><a id="En_savoir_plus" class="En_savoir_plus"  href="page/redaction_xml.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/XML_sepa.jpeg"alt="">
 </div>
 
-<div data-aos="fade-right" class="projet">
- <img src="image/applicationSuivi1.png"alt="">
- <p style="	color:#fff;">Application de Suivi Client <b>PHP</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_suivi_client.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+  <h3 style="	color:#fff;"> Application de Suivi Client <b>PHP</b><a id="En_savoir_plus" class="En_savoir_plus"  href="page/application_suivi_client.html"> <i class="fas fa-cog"></i></a></h3>
+  <img src="image/applicationSuivi1.png"alt="">
 </div>
 
-<div data-aos="fade-right" class="projet">
- <img src="img/Morpion_1.png"alt="">
- <p style="	color:#fff;">Application Morpion <b>Jquery</b></p>
- <a id="En_savoir_plus" class="En_savoir_plus" href="page/Application_Morpion.html">En savoir plus +</a>
+<div data-aos="fade-right" class="d-block mx-auto projet">
+    <h3 style="	color:#fff;"> Application Morpion <b>JQuery</b><a id="En_savoir_plus" class="En_savoir_plus"  href="page/application_morpion.html"> <i class="fas fa-cog"></i></a></h3>
+<img src="img/Morpion_1.png"alt="">
 </div>
 </div>
-  </section>
-  <section>
-      <div class="main">
-  <h2 style="color:#fff;">Compétences </h2>
+</section>
+<section>
+  <div class="main">
+<h2 style="color:#fff;">Compétences </h2>
 
-    <p style="color:#fff;">Durant mon stage,mon alternance et mes deux ans de BTS S.I.O SLAM,j'ai également pu acquérir de nombreuses compétences...</p>
-  <div class="competence_langage">
-  <div class="langage_info">
-     <div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="java"><i class="fab fa-java"></i> Java : Langage Logiciel</div>
-    <progress id="avancement1" value="69" max="100"></progress>
-    <span id="pourcentage1"></span>
-  </div>
-  <div class="langage_info">
-    <div data-aos="fade-left"style="	color:#fff;margin-top:30px;"><i class="fab fa-python"></i> Python: Langage Logiciel</div>
-   <progress id="avancement2" value="80" max="100"></progress>
-   <span id="pourcentage2"></span>
-    </div>
-  <div class="langage_info">
-     <div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="php"><i class="fab fa-php"></i> PHP : Langage Web</div>
-    <progress id="avancement3" value="85" max="100"></progress>
-    <span id="pourcentage3"></span>
-  </div>
-  <div class="langage_info">
-    <div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="html"><i class="fab fa-html5"></i> HTML : Langage Web</div>
-   <progress id="avancement4" value="85" max="100"></progress>
-   <span id="pourcentage4"></span>
-    </div>
+<p style="color:#fff;">Durant mon stage,mon alternance et mes deux ans de BTS S.I.O SLAM,j'ai également pu acquérir de nombreuses compétences...</p>
+<div class="competence_langage">
+<div class="langage_info">
+ <div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="java"><i class="fab fa-java"></i> Java : Langage Logiciel</div>
+<progress id="avancement1" value="69" max="100"></progress>
+<span id="pourcentage1"></span>
+</div>
+<div class="langage_info">
+<div data-aos="fade-left"style="	color:#fff;margin-top:30px;"><i class="fab fa-python"></i> Python: Langage Logiciel</div>
+<progress id="avancement2" value="80" max="100"></progress>
+<span id="pourcentage2"></span>
+</div>
+<div class="langage_info">
+ <div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="php"><i class="fab fa-php"></i> PHP : Langage Web</div>
+<progress id="avancement3" value="85" max="100"></progress>
+<span id="pourcentage3"></span>
+</div>
+<div class="langage_info">
+<div  data-aos="fade-left"style="	color:#fff;margin-top:30px;"class="html"><i class="fab fa-html5"></i> HTML : Langage Web</div>
+<progress id="avancement4" value="85" max="100"></progress>
+<span id="pourcentage4"></span>
+</div>
 
-  <div class="competence_langage">
-  <div class="langage_info">
-     <div  data-aos="fade-left"style="	color:#fff;margin-top:0px;"class="css"><i class="fab fa-css3"></i> CSS : Langage Web Design</div>
-    <progress id="avancement5" value="80" max="100"></progress>
-    <span id="pourcentage5"></span>
-  </div>
-  <div class="langage_info">
-    <div data-aos="fade-left"style="	color:#fff;margin-top:20px;" class="javascript"><i class="fab fa-js-square"></i> Javascript : Langage Web Dynamique</div>
-   <progress id="avancement6" value="65" max="100"></progress>
-   <span id="pourcentage6"></span>
-    </div>
+<div class="competence_langage">
+<div class="langage_info">
+ <div  data-aos="fade-left"style="	color:#fff;margin-top:0px;"class="css"><i class="fab fa-css3"></i> CSS : Langage Web Design</div>
+<progress id="avancement5" value="80" max="100"></progress>
+<span id="pourcentage5"></span>
+</div>
+<div class="langage_info">
+<div data-aos="fade-left"style="	color:#fff;margin-top:20px;" class="javascript"><i class="fab fa-js-square"></i> Javascript : Langage Web Dynamique</div>
+<progress id="avancement6" value="65" max="100"></progress>
+<span id="pourcentage6"></span>
+</div>
 
-  <div class="langage_info">
-     <div  data-aos="fade-left"style="	color:#fff;margin-top:20px;"class="sql"><i class="fas fa-database"></i> SQL : Langage Base de donnée </div>
-    <progress id="avancement7" value="75" max="100"></progress>
-    <span id="pourcentage7"></span>
-  </div>
-  <div class="langage_info">
-    <div data-aos="fade-left" style="	color:#fff;" class="jquery">  <img height="25" width="25" src="https://img.icons8.com/ios-filled/150/ffffff/jquery.png"/>Jquery : Langage Web venant du Javascript</div>
-   <progress style="margin-top:15px;"id="avancement8" value="55" max="100"></progress>
-   <span id="pourcentage8"></span>
-    </div>
-  </div>
-  <script type="text/javascript">
-  var avancement = ["avancement1","avancement2","avancement3","avancement4","avancement5","avancement6","avancement7","avancement8"];
-  var pourcentage = ["pourcentage1","pourcentage2","pourcentage3","pourcentage4","pourcentage5","pourcentage6","pourcentage7","pourcentage8"];
-  for (var i = 0; i < avancement.length; i++) {
-     document.getElementById(pourcentage[i]).innerHTML = document.getElementById(avancement[i]).value+"%";
-  }
-  </script>
+<div class="langage_info">
+ <div  data-aos="fade-left"style="	color:#fff;margin-top:20px;"class="sql"><i class="fas fa-database"></i> SQL : Langage Base de donnée </div>
+<progress id="avancement7" value="75" max="100"></progress>
+<span id="pourcentage7"></span>
+</div>
+<div class="langage_info">
+<div data-aos="fade-left" style="	color:#fff;" class="jquery">  <img height="25" width="25" src="https://img.icons8.com/ios-filled/150/ffffff/jquery.png"/>Jquery : Langage Web venant du Javascript</div>
+<progress style="margin-top:15px;"id="avancement8" value="55" max="100"></progress>
+<span id="pourcentage8"></span>
+</div>
+</div>
+<script type="text/javascript">
+var avancement = ["avancement1","avancement2","avancement3","avancement4","avancement5","avancement6","avancement7","avancement8"];
+var pourcentage = ["pourcentage1","pourcentage2","pourcentage3","pourcentage4","pourcentage5","pourcentage6","pourcentage7","pourcentage8"];
+for (var i = 0; i < avancement.length; i++) {
+ document.getElementById(pourcentage[i]).innerHTML = document.getElementById(avancement[i]).value+"%";
+  document.getElementById(pourcentage[i]).style.textAlign = "center"
+}
+</script>
 
 </section>
 
@@ -249,7 +247,7 @@ document.addEventListener('click', ()=>{
     }, 500);
 })
 </script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
 $(".loader").slideToggle("1000"); })

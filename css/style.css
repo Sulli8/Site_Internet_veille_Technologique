@@ -17,7 +17,6 @@ body{
 position : fixed;
 z-index: 9999;
 background: #000000;
-/*background : url('../image/logo.png') 50% 50% no-repeat;*/
 top : 0px;
 left : 0px;
 height : 100%;
@@ -28,6 +27,7 @@ cursor : wait;
 	border-bottom: 1px solid #fff;
 	color:#fff;
 }
+
 .competence_langage{
 	margin: auto;
 	text-align: center;
@@ -40,6 +40,7 @@ cursor : wait;
 }
 
 #pourcentage{
+	text-align: center;
 	font-size: 18px;
 }
 .scroll_competence{
@@ -47,10 +48,9 @@ cursor : wait;
 	height:400px;
 }
 .langage_info{
-	display: inline-block;
+	display: block;
 	margin: auto;
 	font-size:20px;
-	margin-left: 50px;
 }
 .propos_de_moi{
 	margin-bottom:200px;
@@ -60,7 +60,6 @@ cursor : wait;
 	margin-top: 40px;
 }
 .competence_langage p{
-	width:500px;
 	text-align: center;
 }
 .competence_langage span{
@@ -93,30 +92,36 @@ progress[value]::-webkit-progress-value {
 	margin-top: 0px;
 }
 progress{
+	max-width:500px;
 	display: block;
 	margin: auto;
 	height:20px;
-	width:500px;
+	width:80%;
 	margin-top: 10px;
 	background-color: #0f0f0f;
 }
 .PPE{
 	display: block;
 	margin: auto;
-	margin-top: 5px;
+	text-align: center;
+
 }
 .projet {
-	display: inline-block;
+	display:inline-block;
 	margin:auto;
-	border:2px solid #fff;
+	text-align: center;
 	color:#fff;
-	padding: 20px 20px 20px 20px;
-	margin-left: 30px;
-	margin-top: 30px;
+	width: 100%;
+
+	height: 100%;
+	padding: 10px 10px 10px 10px;
+	margin-top: 5%;
 }
+
 .projet img {
-	width:200px;
-	height:90px;
+
+	width:90%;
+	height:90%;
 
 }
 
@@ -144,23 +149,29 @@ progress{
 			background-color: #fff;
 			color:#0f0f0f;
 		}
-.En_savoir_plus{
-	color:#fff;
-	border: 2px solid #fff;
-	padding: 10px 10px 10px 10px;
-	float:left;
-	margin-top: 8px;
-}
+
+ .fa-cog {
+	 -webkit-animation: tourne 5s infinite;
+ }
+ @-webkit-keyframes tourne {
+     0% {
+     -webkit-transform: rotate(0deg);
+   }
+   100% {
+     -webkit-transform: rotate(360deg);
+   }
+ }
 .En_savoir_plus:hover{
-	transition: 0.5s;
-	background-color: #fff;
-	color:#0f0f0f;
+	transition: 0.3s;
+	color: purple;
+
 }
+
+
 .presentation{
 	margin-top:30px;
 	margin-bottom: 40px;
 	text-align: center;
-	color:#fff;
 	text-align:justify;
 	color:#fff;
 
@@ -169,14 +180,18 @@ progress{
 	margin-top:20px;
 }
 
-.developpement_web,.developpement_logiciel{
-	margin-top:30px;
+.saut_ligne{
 	display: block;
 	margin: auto;
+	margin-top: 25px;
+
+}
+
+.developpement_web,.developpement_logiciel{
+	margin-top:30px;
+	margin-bottom: 40px;
+	text-align: center;
 	color:#fff;
-	width:600px;
-	margin-left:5px;
-	margin-top: 40px;
 	text-align:justify;
 }
 
@@ -197,7 +212,7 @@ footer{
 	margin: auto;
 	text-align: center;
 	margin-top: 20px;
-	width:1000px;
+	width:80%;
 	border-top:1px solid #fff;
 	color:#fff;
 }
@@ -243,6 +258,8 @@ footer p{
     background: #fff;
     border: 1px solid crimson;
 }
+
+
 @keyframes Anim1 {
     from {
         transform: scale(1) rotate(0deg);
@@ -281,11 +298,9 @@ footer p{
   overflow: hidden;
 	z-index: 6;
   background-color: #0f0f0f;
+
 }
-.titre{
-	border-bottom: 4px solid #fff;
-	width:100%;
-}
+
 #navbar a {
   float: left;
   display: block;
@@ -298,9 +313,12 @@ footer p{
 
 
 .sticky {
+	display: block;
+	margin:auto;
   position: fixed;
   top: 0;
-  width: 86.1%;
+  width: 55%;
+
 }
 
 .sticky + .content {
@@ -322,19 +340,6 @@ a{
 a{
 	text-decoration: none;
 
-}
-.home .carousel-item h2{
-	font-size: 40px;
-	color: #fff;
-	margin:0 0 10px;
-	opacity: 0;
-}
-
-.home .carousel-item p{
-	font-size: 20px;
-	margin:0;
-	color: #eeeeee;
-	opacity:0;
 }
 
 

@@ -3,27 +3,17 @@ html{
   scroll-behavior: smooth;
 }
 body{
+	overflow: auto;
 	cursor: none;
 	background-color: #0f0f0f;
 	border-right:100px solid #0f0f0f;
 	border-left:100px solid #0f0f0f;
 }
-.competence,.image_projet{
-  display: inline-block;
-  margin: auto;
-}
+
 .competence{
   padding: 10px 10px 10px 10px;
-  float:right;
 }
-.image_projet{
-  float:left;
-}
-.text--big{
-  font-size: 1.18rem;
-  line-height: 2rem;
-  color:#fff;
-}
+
 .like_projet{
   color:#fff;
   width: 25px;
@@ -49,25 +39,30 @@ body{
 
 .block_projet{
   margin-top: 100px;
+	display: block;
+	margin: auto;
 }
 .image_projet{
   margin:0;
-  overflow-y: auto;
-  height:600px;
 
 }
 .image_projet img{
   display: block;
   margin: auto;
+	width:100%;
+	height:70%;
 
 }
 .competence{
-  width:50%;;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
+
 .sticky {
   position: fixed;
-  top: 0;
-  width: 86.1%;
+  margin-bottom:10px;
+  width: 55%;
 }
 
 .sticky + .content {
@@ -92,15 +87,14 @@ li{
 #navbar {
   overflow: hidden;
 	z-index: 6;
-  background-color: #0f0f0f;
+  background-color: none;
+	color:#0f0f0f;
 }
 .far{
   margin-left: -10px;
   transform: translateY(-60%);
 }
 .titre{
-	border-bottom: 4px solid #fff;
-	width:99%;
 	display:block;
   font-weight: 300;
   line-height: 1.2;
@@ -123,7 +117,7 @@ footer{
 	margin: auto;
 	text-align: center;
 	margin-top: 20px;
-	width:1000px;
+	width:80%;
 	border-top:1px solid #fff;
 	color:#fff;
 }
@@ -208,13 +202,12 @@ footer i{
 	padding: 40px;
 	margin-top: 30px;
 }
-
 footer{
 	display: block;
 	margin: auto;
 	text-align: center;
 	margin-top: 20px;
-	width:1000px;
+	width:80%;
 	border-top:1px solid #fff;
 	color:#fff;
 }
@@ -256,7 +249,8 @@ img,h2,h1,.presentation{
 }
 .presentation{
 	color:#fff;
-	width:600px;
+	width:100%;
+	text-align: center;
 	text-align: justify;
 }
 
